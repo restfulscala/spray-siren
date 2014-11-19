@@ -1,0 +1,1 @@
+Integration library for siren-scala and spray-httpx, and by that, spray-routing.
