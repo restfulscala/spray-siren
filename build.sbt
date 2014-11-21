@@ -10,6 +10,8 @@ organization := "org.restfulscala"
 
 resolvers += "spray repo" at "http://repo.spray.io"
 
+resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/releases/"
+
 libraryDependencies ++= Seq(
   "com.yetu" %% "siren-scala" % "0.4.0",
   "io.spray" %% "spray-httpx" % "1.3.2",
