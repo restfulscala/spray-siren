@@ -29,4 +29,6 @@ bintray.Keys.bintrayOrganization in bintray.Keys.bintray := Some("restfulscala")
 
 bintray.Keys.packageLabels in bintray.Keys.bintray := Seq("scala", "rest", "spray")
 
+scoverage.ScoverageSbtPlugin.instrumentSettings
+
 org.scoverage.coveralls.CoverallsPlugin.coverallsSettings
