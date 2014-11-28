@@ -18,6 +18,6 @@ package object spraysiren {
    */
   val `application/vnd.siren+json` = MediaTypes.register(MediaType.custom(sirenJsonMediaType))
 
-  implicit def sirenJsonConvertableMarshaller[T : SirenRootEntityWriter](implicit m: Marshaller[RootEntity]) =
+  implicit def sirenJsonConvertableMarshaller[T : SirenRootEntityWriter](implicit m: Marshaller[RootEntity]): Marshaller[T] =
     Marshaller.delegate[T, RootEntity](`application/vnd.siren+json`)(Siren.asRootEntity(_))
 }
